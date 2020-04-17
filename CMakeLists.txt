@@ -13,6 +13,8 @@ find_package(Boost 1.56 REQUIRED COMPONENTS
 # third party
 set(INCLUDE_DIRECTORIES
   third_party/rapidjson/include/
+  third_party/leptonica/include
+  third_party/tesseract/include
 )
 
 # Set up source files
@@ -26,11 +28,6 @@ set(HEADERS
   src/Interface.hpp
   src/core/config.hpp
   src/core/Ocr.hpp
-)
-
-set(INCLUDE_DIRECTORIES
-  third_party/leptonica/include
-  third_party/tesseract/include
 )
 
 set(SHARED_COMPILE_DEFINITIONS
